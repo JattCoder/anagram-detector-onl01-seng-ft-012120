@@ -5,7 +5,7 @@ class Anagram
     @arr = []
   end
 
-  def self.match(sentence)
+  def match(sentence)
     sentence.each do |word|
       @arr << word if word.char.sort.join == @word
     end
