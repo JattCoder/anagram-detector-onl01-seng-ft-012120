@@ -7,7 +7,7 @@ class Anagram
 
   def match(sentence)
     sentence.each do |word|
-      @arr << word if word.char.sort.join == @word
+      @arr << word if word.chars.sort.join == @word
     end
     return @arr
   end
