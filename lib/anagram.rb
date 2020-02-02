@@ -1,14 +1,14 @@
 class Anagram
   attr_accessor :word, :arr
   def initialize(word)
-    @sword = word
-    @wordarr = []
+    @word = word
+    @arr = []
   end
 
   def match(sentence)
     sentence.each do |word|
-      @wordarr << word if word.char.sort.join == @sword
+      @arr << word if word.char.sort.join == @word
     end
-    return @wordarr
+    return @arr
   end
 end
